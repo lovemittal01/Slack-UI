@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.head {
+  font-size: x-large;
+  color: white;
+}
+
+.subhead {
+  font-size: large;
+  color: #86868b;
+}
+
+.logo {
+  width: 45px;
+}
+
+.logo-bg {
+  background: linear-gradient(to top, #2f2e34, #54505d);
+  color: white;
+  display: flex;
+  padding: 10px;
+  border: solid #423f4a 2px;
+  border-radius: 0.75rem;
+}
+
+.card {
+  background: radial-gradient(circle, #424146, #1f1e23);
+  width: 600px;
+  height: fit-content;
+  gap: 30px;
+  color: white;
+  display: flex;
+  padding: 40px;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 3px solid #303030;
+}
+
+.middle-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bar-text {
+  font-size: large;
+}
+
+.bar {
+  background-image: linear-gradient(to right, #242121, #444448);
+  width: 100%;
+  height: 15px;
+  border-radius: 10rem;
+  overflow: visible;
+  position: relative;
+}
+
+.progress {
+  background-image: linear-gradient(to right, #36fddc, #33ffe2);
+  height: 100%;
+  border-radius: 10rem;
+  box-shadow: 0 0 30px 10px rgba(51, 255, 226, 0.8);
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.button1,
+.button2 {
+  width: fit-content;
+  padding: 5px 25px;
+  border-radius: 10rem;
+  font-weight: 500;
+}
+
+.button1 {
+  background-image: linear-gradient(to bottom, #c41619, #f2370d);
+}
+
+.button2 {
+  background-image: linear-gradient(to bottom, #31f0ee, #43bee6);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .team {
+    gap: 20px;
+  }
+
+  .team-text {
+    gap: 5px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .logo-bg {
+    padding: 8px;
+  }
+
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .subhead {
+    font-size: 1rem;
+  }
+
+  .bar-text {
+    font-size: 1.2rem;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .button1,
+  .button2 {
+    padding: 5px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 35px;
+  }
+
+  .logo-bg {
+    padding: 6px;
+  }
+
+  .head {
+    font-size: 1.25rem;
+  }
+
+  .subhead {
+    font-size: 0.9rem;
+  }
+
+  .bar-text {
+    font-size: 1rem;
+  }
+
+  .button1,
+  .button2 {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+}
